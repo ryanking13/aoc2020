@@ -26,4 +26,14 @@ func main() {
 			}
 		}
 	}
+
+	for i := 0; i < n; i = i + 1 {
+		for j := i + 1; j < n; j = j + 1 {
+			for k := j + 1; k < n; k = k + 1 {
+				if a[i]+a[j]+a[k] == 2020 {
+					fmt.Println(a[i] * a[j] * a[k])
+				}
+			}
+		}
+	}
 }
